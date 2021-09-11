@@ -1,0 +1,60 @@
+/* =========== media Query At xl View Port =========== */
+
+@media screen and (max-width: 1200px) {}
+
+
+/* =========== media Query At lg View Port =========== */
+
+@media screen and (max-width: 992px) {}
+
+
+/* =========== media Query At md View Port =========== */
+
+@media screen and (max-width: 768px) {
+    .header .offcanvas-body ul li a {
+        font-family: "OpenSans-Regular" !important;
+        font-weight: 700;
+        font-size: 1.1em;
+        color: rgba(0, 0, 0, 0.541);
+    }
+    .navbar-brand .blockquote {
+        font-size: 1em;
+        color: var(--br-one);
+    }
+    .navbar-brand .blockquote-footer {
+        font-size: 0.8em;
+        color: var(--br-two);
+    }
+    .banner {
+        text-align: center;
+    }
+    .banner h1 {
+        font-family: "OpenSans-light" !important;
+        font-size: 2.5em;
+    }
+    .banner h2 {
+        font-size: 2em;
+    }
+    .banner h3 {
+        font-size: 1.5em;
+    }
+}
+
+
+/* =========== media Query At sm View Port =========== */
+
+@media screen and (max-width: 576px) {
+    .banner {
+        padding: 50px 10px;
+    }
+    .banner h1 {
+        font-family: "OpenSans-light" !important;
+        font-size: 1.5em;
+    }
+    .banner h2 {
+        font-size: 1.7em;
+    }
+    .banner h3 {
+        font-size: 1.1em;
+    }
+}

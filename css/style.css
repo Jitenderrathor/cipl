@@ -1,0 +1,314 @@
+:root {
+    --br-one: #1e5e8a;
+    --br-two: #98c513;
+    --br-three: #96d5ff;
+    --br-four: #2f90d1;
+    --br-five: #fac273;
+}
+
+
+/* ================== Baclground Color declaration ==================== */
+
+.bg-1 {
+    background-color: var(--br-one) !important;
+}
+
+.bg-2 {
+    background-color: var(--br-two) !important;
+}
+
+.bg-3 {
+    background-color: var(--br-three) !important;
+}
+
+.bg-4 {
+    background-color: var(--br-four) !important;
+}
+
+.bg-5 {
+    background-color: var(--br-five) !important;
+}
+
+
+/* ================== Text Color declaration ==================== */
+
+.color-1 {
+    color: var(--br-one) !important;
+}
+
+.color-2 {
+    color: var(--br-two) !important;
+}
+
+.color-3 {
+    color: var(--br-three) !important;
+}
+
+.color-4 {
+    color: var(--br-four) !important;
+}
+
+.color-5 {
+    color: var(--br-five) !important;
+}
+
+
+/* ================== Font declaration ==================== */
+
+@font-face {
+    font-family: "HinaMincho";
+    src: url(../font/HinaMincho-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(../font/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(../font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../font/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "IMFellDoublePica";
+    src: url(../font/IMFellDoublePica-Regular.ttf);
+}
+
+.font-1 {
+    font-family: "HinaMincho" !important;
+}
+
+.font-2 {
+    font-family: "OpenSans-Light" !important;
+}
+
+.font-3 {
+    font-family: "OpenSans-Regular" !important;
+}
+
+.font-4 {
+    font-family: "OpenSans-Bold" !important;
+}
+
+
+/* ================== Hover Effects ================== */
+
+.hover1 {
+    transition: all 0.5s;
+}
+
+.hover1:hover {
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 20px black;
+    color: white !important;
+    background-color: var(--br-one) !important;
+}
+
+
+/* =================== Hover Effect Declaration =================== */
+
+h2 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+h2::before {
+    content: "";
+    width: 30%;
+    height: 3px;
+    background-color: var(--br-one);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+}
+
+
+/* ==================================== Main Body Goes Down ==================================== */
+
+a {
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.footer a:hover {
+    color: var(--br-five) !important;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-family: "OpenSans-Regular";
+}
+
+
+/* ==================== Header Section Start ==================== */
+
+.navbar-brand .blockquote {
+    font-size: 1.3em;
+    color: var(--br-one);
+}
+
+.navbar-brand .blockquote-footer {
+    font-size: 1em;
+    color: var(--br-two);
+}
+
+.header .offcanvas-body ul li a {
+    font-family: "OpenSans-Regular" !important;
+    font-weight: 600;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+
+/* ==================== Banner Section Start ==================== */
+
+.banner {
+    background-image: url(../image/portal.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner h1 {
+    font-family: "IMFellDoublePica";
+    font-size: 3em;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+}
+
+.banner h3 {
+    font-size: 2em;
+}
+
+
+/* ==================== About Section Start ==================== */
+
+.about p {
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #7a7a7a;
+}
+
+
+/* ==================== Services Section Start ==================== */
+
+.service {
+    background-image: url(../image/tech.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.service .col-10 {
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px black;
+    font-size: 0.8em !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.hover {
+    position: relative;
+}
+
+
+/* .service .col-10 .hover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--br-one);
+    top: 0;
+    right: 100%;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.service .col-10:hover .hover::before {
+    right: 0;
+} */
+
+.service .col-3 h4 {
+    font-size: 1.2em;
+}
+
+.service img {
+    width: 70px;
+}
+
+.service p {
+    text-align: justify !important;
+}
+
+
+/* ==================== Query Section Start ==================== */
+
+.query {
+    background-image: url(../image/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* ==================== footer Section Start ==================== */
+
+.main {
+    border-bottom: 1px solid white;
+}
+
+.footer h5 {
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+
+
+/* ==================== About.html Section Start ==================== */
+
+.sidebar li .submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: var(--bs-dark);
+}
+
+.sidebar .nav-link:hover {
+    color: var(--bs-primary);
+}
+
+aside .nav-item {
+    border-bottom: 1px solid #7a7a7a !important;
+}
+
+aside .nav-link:hover {
+    background-color: #b8b5b5;
+    color: white !important;
+}
+
+p {
+    font-size: 1em;
+    line-height: 20px;
+}
